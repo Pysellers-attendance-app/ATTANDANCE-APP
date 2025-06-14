@@ -1,0 +1,68 @@
+/* Full page background with overlay */
+.home-container {
+  height: 100vh;
+  background-image: url("https://as2.ftcdn.net/v2/jpg/03/25/01/55/1000_F_325015501_0OREXfdOKXVEkRb3CoULxDDMgGy9gPNW.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background-color:#0756f2;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  width: 90%;
+  max-width: 600px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.login-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  min-width: 140px;
+}
+
+.login-btn.admin {
+  background-color: #007bff;
+  color: white;
+}
+
+.login-btn.admin:hover {
+  background-color: #0056b3;
+}
+
+.login-btn.employer {
+  background-color: #28a745;
+  color: white;
+}
+
+.login-btn.employer:hover {
+  background-color: #1e7e34;
+}

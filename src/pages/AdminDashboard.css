@@ -1,0 +1,146 @@
+.admin-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f0f4f8, #cbd5e1);
+  color: #1e293b;
+}
+
+/* Sidebar */
+.admin-sidebar {
+  width: 260px;
+  background: #ffffff;
+  padding: 20px;
+  border-right: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.admin-avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.admin-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.admin-role {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-nav-button {
+  text-align: left;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.admin-nav-button:hover {
+  background: #f1f5f9;
+}
+
+.admin-nav-button.active {
+  background: #dbeafe;
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+/* Main content */
+.admin-main {
+  flex-grow: 1;
+  padding: 30px;
+}
+
+.admin-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.admin-content {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Table Styling */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px 15px;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #f8fafc;
+  font-weight: 600;
+}
+/* Dark mode support */
+.admin-dashboard.dark {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+.admin-dashboard.dark .admin-sidebar {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+.admin-dashboard.dark .admin-nav-button {
+  color: #cbd5e1;
+}
+
+.admin-dashboard.dark .admin-nav-button.active {
+  background-color: #334155;
+  color: #93c5fd;
+}
+
+.admin-dashboard.dark .admin-main {
+  background: #1e293b;
+}
+
+.admin-dashboard.dark .admin-content {
+  background: #334155;
+  color: #f1f5f9;
+}
+
+.admin-dashboard.dark .data-table th {
+  background-color: #475569;
+}
+
+.admin-dashboard.dark .data-table td,
+.admin-dashboard.dark .data-table th {
+  border-color: #64748b;
+}
+
+/* Dark toggle */
+.dark-toggle {
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #64748b;
+}
