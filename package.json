@@ -1,21 +1,23 @@
 {
   "name": "attandance-app",
   "version": "1.0.0",
+  "description": "Attendance app with React and Vite",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sathya V",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "vite": "^6.3.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.2",
     "recharts": "^2.15.3"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
   }
 }
